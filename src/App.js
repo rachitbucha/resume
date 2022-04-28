@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Resume1 from './resumes/format-1/index';
+import html2pdf from 'html2pdf.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  downloadPdf() {
+    console.log('---------');
+    var element = document.getElementById('resume');
+    var opt = {
+      filename: 'rachit-bucha-resume.pdf',
+      html2canvas: { scale: 10 },
+      jsPDF: { format: 'a4' }
+    };
+    html2pdf(element, opt);
+  }
+
+  render() {
+    return (
+      <div className="App container-fluid">
+        <div className="row">
+          <div className="col-sm-12 col-md-2 col-lg-2">
+            <br />
+            <button onClick={this.downloadPdf} className="btn btn-success">
+              <i className="fa fa-download"></i> <span>Download</span>
+            </button>
+          </div>
+          <div className="col-sm-12 col-md-2 col-lg-2">
+            <Resume1 />
+          </div>
+        </div>
+
+      </div>
+    );
+  }
 }
 
 export default App;
