@@ -85,31 +85,31 @@ const personalDetails = {
         {
             name: 'Group Chat Application',
             tech: 'NodeJs, Socket.IO',
-            desc: `Telecalling CRM and Sales Engagement Platform`,
+            desc: `Group Chat Application, Multiple Users Chat and Share their Location`,
             link: 'https://rachit-node-chat-app.herokuapp.com'
         },
         {
             name: 'Wheather ForeCast Application',
             tech: 'NodeJs',
-            desc: `Telecalling CRM and Sales Engagement Platform`,
+            desc: `Applicaton for Getting Latest Wheather ForeCast`,
             link: 'https://rachit-wheather-app.herokuapp.com'
         },
         {
             name: 'Student Profile Application',
             tech: 'Angular',
-            desc: `Telecalling CRM and Sales Engagement Platform`,
+            desc: `Platform For View and Search Student Profiles`,
             link: 'https://github.com/rachitbucha/student-profiles'
         },
         {
             name: 'Task Management Portal',
             tech: 'NestJs',
-            desc: `Telecalling CRM and Sales Engagement Platform`,
+            desc: `Task Management Platform`,
             link: 'https://github.com/rachitbucha/task-management-backend'
         },
         {
             name: 'Resturant Management CRM',
             tech: 'Laravel',
-            desc: `Telecalling CRM and Sales Engagement Platform`,
+            desc: `Resturant Management Platform`,
             link: 'https://github.com/rachitbucha/restaurant'
         }
     ],
