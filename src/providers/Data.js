@@ -32,7 +32,7 @@ const personalDetails = {
     educations: [
         {
             name: 'MCA',
-            college: 'Jecrc University',
+            college: 'JECRC University',
             duration: '2019 - 2021',
             location: 'Jaipur',
             stream: 'Master Of Computer Application',
